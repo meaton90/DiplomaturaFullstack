@@ -1,17 +1,15 @@
 .contenedor{
     background-color: white;
-    width: 500px;
-    height: 500px;
     border: 2px solid black;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-end;
-
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .item{    
-    width: 33.33%;
-    height: 33.33%;
+    width: 150px;
+    height: 150px;
     font-size: 20px;
     color: white;
     display: inline-flex;
