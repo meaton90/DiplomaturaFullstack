@@ -17,7 +17,7 @@ nav {
 	background: #CC3910;
 	float: left;
 	width: 160px;
-	transition: all 0.3s ease;
+	transition: background 0.3s ease;
 	display: flex;
 	justify-content: center;
 	align-items: center;

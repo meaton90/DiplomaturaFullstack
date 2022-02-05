@@ -6,13 +6,13 @@ body {
 	margin: 0;
 }
 #contenedor {
-	background: #8FA68E;
+	background: #3a9637;
 	width: 100%;
 }
 nav {
 	background: skyblue;
 	width: 100%;
-	transition: all 2s ease;
+	transition: background 2s ease;
 	display: flex;
 	justify-content: center;
 	align-items: center;
