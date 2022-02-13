@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="ejercicio1.css">
+</head>
+
+<body id="mybody" ondblclick="Mycolor('pink')">
+    <h3>Cambiar color de fondo</h3>
+    <p>
+        <button onclick="Mycolor('red')">Rojo</button> &nbsp;
+        <button onclick="Mycolor('green')">Verde</button> &nbsp;
+        <button onclick="Mycolor('yellow')">Amarillo</button> &nbsp;
+    </p>
+
+    <script>
+        function Mycolor(color) {
+            var element = document.getElementById("mybody");
+            element.style.backgroundColor = color;
+        }
+
+        var alumnos = [{
+            nombre: "Juan Gomez",
+            nota: 7
+        }, {
+            nombre: "Pedro Rodriguez",
+            nota: 4
+        }, {
+            nombre: "Roxana García",
+            nota: 8
+        }, {
+            nombre: "Luciano Lopez",
+            nota: 5
+        }, {
+            nombre: "Fernanda Gimenez",
+            nota: 6
+        }, {
+            nombre: "Florencia Martinez",
+            nota: 10
+        }, {
+            nombre: "Raul Sanchez",
+            nota: 7
+        }, {
+            nombre: "Sandra Figueroa",
+            nota: 8
+        }];
+
+        var aprobados = alumnos.filter(alumnos => alumnos.nota > 6 ); //filtra las notas mayores o iguales que 7
+         
+        for(var i=0; i<aprobados.length;i++){
+            document.write(aprobados[i].nombre+"<br/>"); //muestra el array de alum aprob
+        }
+    </script>
+</body>
+
+</html>
