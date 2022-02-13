@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="ejercicio_1_js.css">
-    <title>Document</title>
+    <title>Ejercicio 1 M3U3</title>
 </head>
 <body>
     <h1>Ejercicio 1 de JS</h1>
@@ -13,20 +13,20 @@
 
     <textarea id="ingreso_dato"></textarea>
 
-    <button onclick="MyFunct()">Enter!</button>
+    <button onclick="MyFunct()">Calcular transporte</button>
     
     <script>
 
         let distance;
-
         function MyFunct(){
-            distance = document.getElementById("ingreso_dato").value;
-            if(distance > 100000){alert("Avion");return;} 
-            else if( distance >= 30000){alert("Auto");return;}
-            else if( distance >= 10000){alert("Colectivo");return;}
-            else if( distance >= 1000){alert("Bicicleta");return;}
-            else if( distance >= 0){alert("Pie");return;}
-            else if( distance <0){alert("No existen distancias negativas");return;}
+            distance = document.getElementById("ingreso_dato").value; //Tomo el dato del textarea
+            if(distance > 100000){alert("Avion");} 
+            else if( distance >= 30000){alert("Auto");}
+            else if( distance >= 10000){alert("Colectivo");}
+            else if( distance >= 1000){alert("Bicicleta");}
+            else if( distance >= 0){alert("Pie");}
+            else if( distance <0){alert("No existen distancias negativas");}
+            document.getElementById("ingreso_dato").value = ""; //Limpio el textarea
         }        
     </script>
     

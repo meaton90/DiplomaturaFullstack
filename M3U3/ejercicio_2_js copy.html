@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ejercicio_1_js.css">
+    <title>Ejercicio 2 M3U3</title>
+</head>
+<body>
+    <h1>Ejercicio 2 de JS</h1>
+    <h2>El mayor número es: </h2>  
+
+    <script>
+
+        let mayor=Array();
+        
+        for(let i=0; i<5; i++){
+            mayor[i]=prompt("Ingrese número: ", "");
+        }
+        
+        mayor.sort(function(a, b){return b - a});
+
+        document.write(mayor[0]);
+
+    </script>
+    
+</body>
+</html>
+
+<!-- TAMBIEN PODEMOS UTILIZAR EL MÉTODO DE BURBUJEO, PERO TENIENDO LA HERRAMIENTA DE JS NO HACE FALTA.
+ for (k = 1; k < mayor.length; k++){
+        for (j = 0; j < (mayor.length-k); j++){
+             if (mayor[j] > mayor[j + 1]) {
+                 aux = mayor[j];
+                 mayor[j] = mayor[j + 1];
+                 mayor[j + 1] = aux;
+             }
+         }
+    } -->
