@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ejercicio 2.css">
+    <title>Ejercicio 2 M3U4</title>
+</head>
+
+<body>
+
+    <h1>Ejercicio 2 de JS</h1>
+    <h2>Colocar caracteres para contarlos:</h2>
+
+    <textarea id="ingreso_dato"></textarea>
+
+    <button onclick="MyFunct()">Contar caracteres</button>
+
+    <script>
+        function MyFunct() {
+            alert("La cantidad de caracteres son: "+document.getElementById("ingreso_dato").value.length);
+            document.getElementById("ingreso_dato").value = ""; //Limpio el textarea
+        }    
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Ejercicio 1 M3U4</title>
+</head>
+<body id="mybody">
+    <h3>Cambiar color de fondo (con doble click vuelve a blanco)</h3>
+    <div class="botones" ondblclick="Mycolor('white')">
+        <button onclick="Mycolor('blue')">Azul</button> &nbsp;
+        <button onclick="Mycolor('red')">Rojo</button> &nbsp;
+        <button onclick="Mycolor('green')">Verde</button> &nbsp;
+    </div>
+
+    <script>
+        function Mycolor(color) {
+            var element = document.getElementById("mybody");
+            element.style.backgroundColor = color;
+        }
+   </script>
+</body>
+</html>

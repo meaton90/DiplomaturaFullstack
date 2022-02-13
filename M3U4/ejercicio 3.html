@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ejercicio 3 M3U4</title>
+</head>
+
+<body>
+    <h3>Lista de alumnos aprobados ordenados: </h3>
+    <script>
+
+        var alumnos = [{
+            nombre: "Juan Gomez",
+            nota: 7
+        }, {
+            nombre: "Pedro Rodriguez",
+            nota: 4
+        }, {
+            nombre: "Roxana García",
+            nota: 8
+        }, {
+            nombre: "Luciano Lopez",
+            nota: 5
+        }, {
+            nombre: "Fernanda Gimenez",
+            nota: 6
+        }, {
+            nombre: "Florencia Martinez",
+            nota: 10
+        }, {
+            nombre: "Raul Sanchez",
+            nota: 7
+        }, {
+            nombre: "Sandra Figueroa",
+            nota: 8
+        }];
+
+        var aprobados = alumnos.filter(alumnos => alumnos.nota > 6 ); //Elimino los alumnos con menos de 7.
+
+        aprobados.sort(function(a, b){return b.nota - a.nota}); //ordeno el array de los alumnos aprobados.
+         
+        for(var i=0; i<aprobados.length;i++){
+            document.write(aprobados[i].nombre + ".  " + aprobados[i].nota +"<br/>"); //muestra el array de alum aprobados
+        }
+    </script>
+</body>
+
+</html>
