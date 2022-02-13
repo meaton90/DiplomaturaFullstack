@@ -15,13 +15,15 @@ body {
 }
 
 header {
-    background-color: rgb(13, 3, 165);
+    background-color: rgb(50, 143, 248);
     border-radius: 10px;
 }
 
 .redes {
     display: inline-flex;
-    float: right;
+    align-items: flex-end;
+    justify-content: center;    
+    align-items: center;
 }
 
 header h1 {
@@ -40,7 +42,7 @@ nav ul {
     list-style: none;
     /*elimino el punto de la list */
     padding: 0;
-    background: rgb(13, 3, 165);
+    background: rgb(50, 143, 248);
     border-radius: 10px;
 }
 
