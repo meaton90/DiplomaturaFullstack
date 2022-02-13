@@ -1,0 +1,67 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    background-image: url("../Imagenes/tennologias-medicina-scaled.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.holder {
+    /* max-width: 960px; */
+    margin: 0 5% 0 5%;
+}
+
+header {
+    background-color: rgb(13, 3, 165);
+    border-radius: 10px;
+}
+
+.redes {
+    display: inline-flex;
+    float: right;
+}
+
+header h1 {
+    color: white;
+    font-size: 2.5em;
+    font-style: italic;
+    font-weight: 100;
+    display: inline-block;
+    position: center;
+    /* asi dejo "centrado" el texto junto a la imagen*/
+}
+
+nav {}
+
+nav ul {
+    list-style: none;
+    /*elimino el punto de la list */
+    padding: 0;
+    background: rgb(13, 3, 165);
+    border-radius: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    /*los pongo uno al lado del otro*/
+    width: 24.5%;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.Boton a.activo {
+    background-color: #4c76a5;
+}
+
+.Boton a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
