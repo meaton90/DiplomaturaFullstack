@@ -1,0 +1,113 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    background-image: url("../Imagenes/tennologias-medicina-scaled.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.holder {
+    max-width: 100%;
+    margin: 0 5% 0 5%;
+}
+
+footer {
+    background-color: gray;
+    color: white;
+    padding: 1em 0;
+    margin-top: 2em;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+nav{
+    background-color: #6da9ed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+button{
+    color: white;
+    background-color: #6da9ed;
+    outline: none;
+    border-style: none;
+}
+
+button a:hover{
+    color: rgba(0,0,0,0.3);
+}
+
+button a{
+    color: white;
+    text-decoration: none;
+}
+
+nav button::before{
+    content: "\2022";  
+    color: white; 
+    display: inline-block; 
+    padding-right: 10px;
+    font-size: 50px;
+    line-height: 25px;
+    vertical-align: -11px;
+    width: 15px;
+}
+
+.redes{
+    float: right;
+}
+
+.fa-brands{
+    font-size: 40px;
+    padding: 0 15px 0 15px;
+    color: white; 
+}
+
+.fa-brands:hover{
+    cursor: pointer;
+    color: black;
+}
+
+/* INICIO HOME */
+
+.iamgen{
+    margin-bottom: 1.5em;
+}
+
+.columnas{
+    overflow: hidden;
+}
+
+.bienvenidos, .testimonios{
+    box-sizing: border-box;
+}
+
+.inicio p{
+    background-color: gray;
+    border-radius: 10px;
+    padding-right: 5em;
+}
+
+.fin{
+    width: 100%;
+}
+
+.testimonio{
+    background-color: #CCC;
+    padding: 1em;
+}
