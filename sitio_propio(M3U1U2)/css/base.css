@@ -96,18 +96,27 @@ nav button::before{
 .bienvenidos, .testimonios{
     box-sizing: border-box;
 }
+.inicio{
+    width: 50%;
+    padding-right: 2em;
+}
 
 .inicio p{
-    background-color: gray;
+    background-color: #6da9ed;
     border-radius: 10px;
-    padding-right: 5em;
+    text-align: center;
 }
 
 .fin{
-    width: 100%;
+    width: 50%;
 }
 
 .testimonio{
     background-color: #CCC;
     padding: 1em;
+}
+
+.h1f{
+    text-align: right;
+    color: white;
 }
