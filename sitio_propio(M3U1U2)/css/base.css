@@ -2,18 +2,33 @@ body {
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     line-height: 20px;
-    background-image: url("../Imagenes/tennologias-medicina-scaled.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
 }
 
-.left{
+.index {
+    background-image: url("../Imagenes/tennologias-medicina-scaled.jpg");
+}
+
+.nosotros {
+    background-image: url("http://www.diariodesalud.com.do/images/showid/3064314");
+}
+
+.galeria {
+    background-image: url("https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2019/07/fallo-cometen-fotografos-novatos-camara-experto.jpg");
+}
+
+.contacto {
+    background-image: url("https://hospitalsiriolibanes.org/imagenes/190-emergency-call.jpg");
+}
+
+.left {
     float: left;
 }
 
-.right{
+.right {
     float: right;
 }
 
@@ -22,18 +37,24 @@ body {
     margin: 0 5% 0 5%;
 }
 
+.container {
+    max-width: 90%;
+}
+
 footer {
     background-color: gray;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
     color: white;
+    clear: both;
     padding: 0.5em 0;
-    margin-top: auto;
+    margin-top: 5em;
     text-align: center;
 }
 
-nav{
+footer .redes {
+    float: right;
+}
+
+nav {
     background-color: #6da9ed;
     display: flex;
     flex-direction: row;
@@ -41,30 +62,26 @@ nav{
     justify-content: center;
 }
 
-button{
+button {
     color: white;
     background-color: #6da9ed;
     outline: none;
     border-style: none;
 }
 
-.imagen1{
-    float: left;
+button a:hover {
+    color: rgba(0, 0, 0, 0.3);
 }
 
-button a:hover{
-    color: rgba(0,0,0,0.3);
-}
-
-button a{
+button a {
     color: white;
     text-decoration: none;
 }
 
-nav button::before{
-    content: "\2022";  
-    color: white; 
-    display: inline-block; 
+nav button::before {
+    content: "\2022";
+    color: white;
+    display: inline-block;
     padding-right: 10px;
     font-size: 50px;
     line-height: 25px;
@@ -72,55 +89,227 @@ nav button::before{
     width: 15px;
 }
 
-.redes{
-    float: right;
-}
-
-.fa-brands{
+.fa-brands {
     font-size: 40px;
     padding: 0 15px 0 15px;
-    color: white; 
+    color: white;
 }
 
-.fa-brands:hover{
+.fa-brands:hover {
     cursor: pointer;
     color: black;
 }
 
+a {
+    color: black;
+}
+
+
 /* INICIO HOME */
 
-.iamgen{
-    margin-bottom: 1.5em;
-}
-
-.columnas{
-    overflow: hidden;
-}
-
-.bienvenidos, .testimonios{
-    box-sizing: border-box;
-}
-.inicio{
-    width: 45%;
+.inicio {
     background-color: rgba(158, 158, 158, 0.7);
     border-radius: 10px;
-    padding-right: 2em;
+    padding: 1em;
     margin: 2em;
 }
 
-.fin{
-    width: 45%;
+.inicio h1 {
+    text-decoration: underline;
+}
+
+.fin {
     background-color: rgba(158, 158, 158, 0.7);
     border-radius: 10px;
-    margin: 2em;    
+    padding: 1em 1em 2.5em 1em;
+    margin: 2em;
 }
 
-.testimonio{
-    background-color: #CCC;
+.fin img {
+    width: 300px;
+    height: auto;
+    float: left;
+    margin-right: 2em;
+}
+
+.fin p {
+    text-align: left;
+}
+
+.fin h1 {
+    text-align: left;
+    color: black;
+    text-decoration: underline;
+}
+
+.imagen1 {
+    float: left;
+}
+
+
+/* INICIO NOSOTROS */
+
+.institucion {
+    background-color: rgba(158, 158, 158, 0.6);
+    border: 1px solid gray;
+    border-radius: 0.7em;
+    margin: 1em 0;
     padding: 1em;
+    overflow: hidden;
 }
 
-.h1f{
-    text-align: right;
-    color: white;
+.holder h2 {
+    text-decoration: underline;
 }
+
+.institucion .info {
+    float: right;
+    width: 75%;
+}
+
+.institucion .info h4 {
+    color: black;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 500;
+    margin: 0 0 1em;
+    border-bottom: 2px solid black;
+    padding-bottom: 0.5em;
+}
+
+.institucion .info p {
+    font-size: 0.8em;
+    line-height: 1.2em;
+}
+
+.institucion figure {
+    float: left;
+    position: relative;
+    width: 200px;
+    height: 150px;
+    border-radius: 0.8em;
+    overflow: hidden;
+    /*oculta lo que queda por fuera*/
+}
+
+.institucion figure img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.institucion figure .ocultos {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    text-align: center;
+    color: black;
+}
+
+.institucion figure:hover {
+    filter: brightness(50%);
+    transition: all 500ms ease-out;
+}
+
+.institucion figure:hover>.ocultos {
+    visibility: visible;
+    transition: all 1000ms ease-out;
+}
+
+.institucion figure .ocultos h3 a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* INICIO DE GALERIA */
+
+.cuadros .foto {
+    float: left;
+    position: relative;
+    width: 22.5%;
+    height: 200px;
+    margin: 1em 0 1em 2.5%;
+    /*tamaño del recuadro donde va la imagen*/
+    border: 2em;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.cuadros .foto img {
+    width: 100%;
+    height: 100%;
+    /*ocupa todo el contenedor*/
+    display: block;
+}
+
+.cuadros .foto:nth-child(4n+1) {
+    /*cada 4 hijos, también se pueden colocar el número de hijo en particular para maquetar */
+    margin-left: 0;
+}
+
+
+/* FIN DE GALERIA */
+
+
+/* INICIO DE CONTACTO */
+
+.columna {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0.6em;
+}
+
+.columna.left {
+    border-right: 1px solid gray;
+}
+
+.columna.right p {
+    font-size: 0.9em;
+}
+
+.columna.right ul li {
+    font-size: 0.8em;
+}
+
+.formulario label {
+    vertical-align: top;
+    width: 30%;
+    display: inline-block;
+}
+
+.formulario input,
+.formulario textarea {
+    background-color: #ddd;
+    border-radius: 5px;
+    border: 1px solid #999;
+    padding: 0.4em 0.6em;
+    font-size: 0.8em;
+    width: 96%;
+}
+
+.formulario input[type="submit"] {
+    background-color: #6da9ed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 1em;
+    width: 100%;
+    /*tamaño del boton */
+    cursor: pointer;
+}
+
+.formulario textarea {
+    height: 10em;
+    resize: none;
+    /* elimino el control del tamaño del cuadro */
+}
+
+.formulario.acciones {
+    text-align: center;
+}
+
+
+/* FIN DE NOVEDADES */
