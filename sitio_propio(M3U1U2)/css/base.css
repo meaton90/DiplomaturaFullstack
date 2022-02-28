@@ -6,6 +6,9 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /*hago que el body me ocupe el 100%*/
 }
 
 .index {
@@ -33,6 +36,8 @@ body {
 }
 
 .holder {
+    display: flex;
+    flex-direction: column;
     max-width: 100%;
     margin: 0 5% 0 5%;
 }
@@ -44,10 +49,9 @@ body {
 footer {
     background-color: gray;
     color: white;
-    clear: both;
     padding: 0.5em 0;
-    margin-top: 5em;
     text-align: center;
+    margin-top: auto;    
 }
 
 footer .redes {
@@ -258,13 +262,18 @@ a {
 /* INICIO DE CONTACTO */
 
 .columna {
-    width: 50%;
+    width: 45%;
     box-sizing: border-box;
     padding: 0.6em;
 }
 
+.columna.right{
+    margin-right: 5%;
+}
+
 .columna.left {
     border-right: 1px solid gray;
+    margin-left: 5%;
 }
 
 .columna.right p {
