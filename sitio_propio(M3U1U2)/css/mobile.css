@@ -7,6 +7,9 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /*hago que el body me ocupe el 100%*/
 }
 
 .left{
