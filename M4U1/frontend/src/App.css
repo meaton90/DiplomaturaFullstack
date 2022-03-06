@@ -44,8 +44,8 @@ body{
 }
 
 .holder{
-  width: 960px;
-  margin: 0 auto;
+  width: auto;
+  margin: 0 5% 0 5%;
 }
 
 h2{
