@@ -1,4 +1,10 @@
 import React from "react";
+import '../styles/components/pages/NosotrosPage.css'
+import { NombrePuesto, Imagenes } from "../components/DatosNombres";
+
+const nombres = ["Juan Gomez", "Luisana Manhardt","José Luis","Fernanda Perez","Fernando Niembro"];
+const imagenes= ["images/nosotros/nosotros1.jpg","images/nosotros/nosotros2.jpg","images/nosotros/nosotros3.jpg","images/nosotros/nosotros4.jpg","images/nosotros/nosotros5.jpg"];
+const puestos= ["Gerente General","Gerente de Marketing","Gerente de logística","Gerente de RRHH","Gerente de Sistemas"];
 
 const NosotrosPage = (props) => {
     return (
@@ -14,18 +20,36 @@ const NosotrosPage = (props) => {
                 </p>
             </div>
             <h2>Staff</h2>
-            <div className="personas">
-                <div className="persona">
-                    <img src="images/nosotros/nosotros1.jpg" width={75} alt="Juan" />
-                    <h5>Juan Gomez</h5>
-                    <h6>Gerente General</h6>
-                    <p>Aute velit cillum sint id dolore velit duis est minim nisi ex ad consectetur. Fugiat eiusmod laborum voluptate consequat eiusmod fugiat officia reprehenderit proident laboris. Incididunt eu irure voluptate consequat id laborum adipisicing ut.
-
-                        Labore voluptate id duis proident exercitation. Amet occaecat nulla fugiat nostrud cillum qui reprehenderit. Irure officia cupidatat exercitation et ipsum cupidatat sunt voluptate nisi id. Dolor eu ea minim ex tempor consequat minim est exercitation.
-                    </p>
+                <div className="personas">
+                    <div className="persona">
+                        <Imagenes imagenes={imagenes[0]} nomimg={nombres[0]}/>
+                        <NombrePuesto nombre={nombres[0]} puesto={puestos[0]}/>
+                    </div>
                 </div>
-            </div>
-
+                <div className="personas">
+                    <div className="persona">
+                        <Imagenes imagenes={imagenes[1]} nomimg={nombres[1]}/>
+                        <NombrePuesto nombre={nombres[1]} puesto={puestos[1]}/>
+                    </div>
+                </div>
+                <div className="personas">
+                    <div className="persona">
+                        <Imagenes imagenes={imagenes[2]} nomimg={nombres[2]}/>
+                        <NombrePuesto nombre={nombres[2]} puesto={puestos[2]}/>
+                    </div>
+                </div>
+                <div className="personas">
+                    <div className="persona">
+                        <Imagenes imagenes={imagenes[3]} nomimg={nombres[3]}/>
+                        <NombrePuesto nombre={nombres[3]} puesto={puestos[3]}/>
+                    </div>
+                </div>
+                <div className="personas">
+                    <div className="persona">
+                        <Imagenes imagenes={imagenes[4]} nomimg={nombres[4]}/>
+                        <NombrePuesto nombre={nombres[4]} puesto={puestos[4]}/>
+                    </div>
+                </div>
         </section>
 
     );

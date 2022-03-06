@@ -1,12 +1,13 @@
 import React from "react";
+import "../../styles/components/layout/Header.css"
 
 const Header = (props) =>{
     return (
         <header>
             <div className="holder">
                 <div className="logo">
-                    <img src="images/logo.jpg" width={500} alt="Medicine-Tech" />
-                    <h1>Medicine</h1>
+                    <img src="images/logo.png" width={100} alt="Medicine-Tech" />
+                    <h1>Transporte X</h1>
                 </div>
             </div>        
         </header>
