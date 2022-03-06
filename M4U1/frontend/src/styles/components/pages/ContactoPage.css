@@ -24,6 +24,7 @@
 
 .formulario label{
     display: inline-block;
+    text-align: right;
     vertical-align: top;
     width: 25%;
 }
@@ -32,10 +33,13 @@
     background: #ddd;
     border-radius: 5px;
     border: 1px solid #999;
+    width: 50%;
 }
 
 .formulario textarea{
     resize: none;
+    width: auto;
+    width: 50%;
     height: 18em;
 }
 
@@ -50,5 +54,7 @@
     font-size: 1em;
     padding: 0.4em 0.2em;
     text-align: center;
-    width: auto;
+    float: left;
+    width: 50%;
+    margin-left: 25.5%;
 }

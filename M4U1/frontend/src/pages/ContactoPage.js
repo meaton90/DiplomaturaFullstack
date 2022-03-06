@@ -9,19 +9,19 @@ const ContactoPage=(props) =>{
                 <h2>Complete el siguiente formulario</h2>    
                 <form action="" method="" className="formulario">
                     <p>
-                        <label>Nombre</label>
+                        <label>Nombre:</label>
                         <input type="text" name="nombre"/>
                     </p>
                     <p>
-                        <label>Email</label>
+                        <label>Email:</label>
                         <input type="text" name="email"/>
                     </p>
                     <p>
-                        <label>Teléfono</label>
+                        <label>Teléfono:</label>
                         <input type="text" name="telefono"/>
                     </p>
                     <p>
-                        <label>Comentario</label>
+                        <label>Comentario:</label>
                         <textarea name="mensaje"></textarea>
                     </p>
                     <p className="centrar"><input type="submit" value="Enviar"/></p>
