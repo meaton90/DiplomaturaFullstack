@@ -17,10 +17,25 @@
     margin: 0.8em 0 1em 1em;
 }
 
-.persona h5, .persona h6{
+.persona h5, .persona h6, .persona ul li{
     font-weight: normal;
     color: #2e64a1;
     margin: 0.8em;
+}
+
+.persona ul li:nth-child(odd){
+    font-size: 0.9em;
+}
+
+.persona ul li:nth-child(even){
+    font-size: 0.8em;
+    font-style: italic;
+    margin-bottom: 1em;
+}
+
+.persona ul{    
+    list-style: none;
+    padding: 0;
 }
 
 .persona h5{

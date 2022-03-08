@@ -10,6 +10,7 @@ const NombrePuesto = ({nombre, puesto}) =>{
     )
 };
 
+
 const Imagenes = ({imagenes,nomimg}) =>{
     return (
         <img src={imagenes} width={75} alt={nomimg} />
