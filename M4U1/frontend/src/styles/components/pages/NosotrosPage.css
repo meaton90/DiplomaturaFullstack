@@ -1,14 +1,16 @@
+
 .historia p{
     font-size: 0.8em;
 }
 
-.persona{
-    width: 18%;
+.persona {
+    max-width: 20%;
+    border: 1px solid gray;
+    border-radius: 0.25em;
     float: left;
     margin-left: 2.25%;
-    border: 1px solid #ddd;
-    border-radius: 0.25em;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .persona img{

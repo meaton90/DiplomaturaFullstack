@@ -4,8 +4,8 @@ footer{
     clear: both;
     color: #333;
     padding: 3em 0;
-    position: absolute;
     bottom: 0;
+    margin-top: auto;
 }
 
 footer p{

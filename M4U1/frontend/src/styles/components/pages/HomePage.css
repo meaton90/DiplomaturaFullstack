@@ -1,3 +1,7 @@
+.holder .page{
+    min-height: 100vh;
+}
+
 .homeimg{
     clear:both;
     margin-bottom: 1.5em;

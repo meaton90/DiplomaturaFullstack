@@ -37,6 +37,7 @@
   }
 }
 
+
 body{
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -47,6 +48,11 @@ body{
   width: auto;
   margin: 0 5% 0 5%;
 }
+
+.holder:nth-child(3){
+  min-height: 67vh;
+}
+
 
 h2{
   font-weight: 400;
