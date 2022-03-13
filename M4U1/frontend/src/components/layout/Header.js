@@ -6,7 +6,7 @@ const Header = (props) =>{
         <header>
             <div className="holder">
                 <div className="logo">
-                    <img src="images/logo.png" width={100} alt="Medicine-Tech" />
+                    <img src="../images/logo.png" width={100} alt="Transporte X" />
                     <h1>Transporte X</h1>
                 </div>
             </div>        
