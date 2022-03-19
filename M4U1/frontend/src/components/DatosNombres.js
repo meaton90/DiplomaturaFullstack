@@ -1,5 +1,7 @@
 import LoremIpsum from "react-lorem-ipsum";
 
+var cantidad =0;
+
 const NombrePuesto = ({nombre, puesto}) =>{
     return (
     <div>
@@ -27,4 +29,21 @@ const Bienvenidos = props => {
 
 };
 
-export {NombrePuesto, Imagenes, Bienvenidos};
+const ContadorClick = props => {
+    // defino la funcion que va a manjear el evento del click
+    const handleClick = e => {
+        // valido que esten pasando el "manejador" que necesito
+        if (props.eventoClick) {
+            // si lo pasaron lo ejecuto
+            props.eventoClick(cantidad++);
+        }
+    }
+
+    return (
+        <p>
+            <button onClick={handleClick}>Clickeame!</button>
+        </p>
+    );
+}
+
+export {NombrePuesto, Imagenes, Bienvenidos, ContadorClick};
