@@ -24,8 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({
   secret: 'EaToNMaTiAs',
   resave: false,
-  saveUninitialized: true,
-  originalUrl: '/admin/login'
+  saveUninitialized: true
 }));
 
 app.use(function(req, res, next){
@@ -48,7 +47,7 @@ app.get('/', function(req, res){
     title: 'Sesiones en Express.js',
     conocido: conocido,
     nombre: req.session.nombre,
-    vistas: req.session.vistas[req.originalUrl]
+    vistas: req.session.vistas[req.otroUrl]
   });
 });
 
@@ -67,6 +66,10 @@ app.post('/ingresar', function(req,res){
 });
 
 app.get('/volver', function(req,res){
+  res.redirect('/');
+})
+
+app.get('/salir', function(req,res){
   req.session.destroy();
   res.redirect('/');
 })
