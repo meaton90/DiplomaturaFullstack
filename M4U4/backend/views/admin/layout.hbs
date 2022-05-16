@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{{title}}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css'>
-    <link rel="stylesheet" href="/stylesheets/normalize.css">
-    <link rel="stylesheet" href="/stylesheets/transporte.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-      <header>
-        <div class="holder">
-            <img src="/images/logo.png" width="100" alt="Transporte X">
-            <h1>Transporte X</h1>
-        </div>
-    </header>
-    {{{body}}}
 
-    {{nombre}} ACCEDISTE AL LOGIN {{vistas}} VECES
+<head>
+  <title>{{title}}</title>
+  <!doctype html>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/stylesheets/admin.css">
+  {{!--
+  <link rel='stylesheet' href='/backend/public/stylesheets/style.css'> --}}
+  <link rel="stylesheet" href="/stylesheets/normalize.css">
+  <link rel="stylesheet" href="/stylesheets/transporte.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
 
-    <a href="/volver">Volver</a>
+<body>
+  <header>
+    <div class="holder">
+      <img src="/images/logo.png" width="100" alt="Transporte X">
+      <h1>Transporte X</h1>
+    </div>
+  </header>
+  {{{body}}}
+  <footer>
+    <p>Diseñado por Matías Eaton - &copy;2022</p>
+  </footer>
+</body>
 
-    <footer>
-        <p>Diseñado por Matías Eaton - &copy;2022</p>
-    </footer>
-  </body>
 </html>

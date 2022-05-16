@@ -4,10 +4,14 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var session = require('express-session');
+var fileUpload = require('express-fileupload');
+
+require('dotenv').config();
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/admin/login');
+var adminRouter = require('./routes/admin/novedades');
 
 var app = express();
 
@@ -23,9 +27,23 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(session({
   secret: 'EaToNMaTiAs',
+  cookie: { maxAge: null},
   resave: false,
   saveUninitialized: true
 }));
+
+secured = async (req, res, next) => {
+  try {
+    console.log(req.session.id_usuario);
+    if (req.session.id_usuario){
+      next();
+    } else {
+      res.redirect('/admin/login');
+    }
+  } catch(error) {
+    console.log(error);
+  }
+}
 
 app.use(function(req, res, next){
   if(!req.session.vistas){
@@ -51,32 +69,33 @@ app.get('/', function(req, res){
   });
 });
 
-app.get('/admin/login', function(req, res){
-  res.render('admin/layout', {
-    nombre: req.session.nombre,
-    vistas: req.session.vistas[req.originalUrl]
-  });
-});
+// app.get('/admin/login', function(req, res){
+//   res.render('admin/layout', {
+//     nombre: req.session.nombre,
+//     vistas: req.session.vistas[req.originalUrl]
+//   });
+// });
 
-app.post('/ingresar', function(req,res){
-  if(req.body.nombre){
-    req.session.nombre = req.body.nombre
-  }
-  res.redirect('/admin/login'); 
-});
+// app.post('/ingresar', function(req,res){
+//   if(req.body.nombre){
+//     req.session.nombre = req.body.nombre
+//   }
+//   res.redirect('/admin/login'); 
+// });
 
-app.get('/volver', function(req,res){
-  res.redirect('/');
-})
+// app.get('/volver', function(req,res){
+//   res.redirect('/');
+// })
 
-app.get('/salir', function(req,res){
-  req.session.destroy();
-  res.redirect('/');
-})
+// app.get('/salir', function(req,res){
+//   req.session.destroy();
+//   res.redirect('/');
+// })
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);
+app.use('/admin/novedades', secured, adminRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -93,5 +112,10 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+app.use(fileUpload({
+  useTempFiles: true,
+  tempFileDir: '/tmp/'
+}));
 
 module.exports = app;
