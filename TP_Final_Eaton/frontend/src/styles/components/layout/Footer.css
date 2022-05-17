@@ -1,0 +1,41 @@
+footer {
+    background-color: gray;
+    color: white;
+    padding: 0.5em 0;
+    text-align: center;
+    margin-top: auto;    
+}
+
+footer .redes {
+    float: right;
+}
+
+.fa-brands {
+    font-size: 40px;
+    padding: 0 15px 0 15px;
+    color: white;
+}
+
+.fa-brands:hover {
+    cursor: pointer;
+    color: black;
+}
+
+a {
+    color: black;
+}
+button {
+    color: white;
+    background-color: #6da9ed;
+    outline: none;
+    border-style: none;
+}
+
+button a:hover {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}

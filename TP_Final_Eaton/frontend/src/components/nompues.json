@@ -1,0 +1,20 @@
+[{
+    "nombre":"Juan Gomez",
+    "puesto":"Gerente General"
+},
+{
+    "nombre":"Luisana Manhardt",
+    "puesto":"Gerente de Marketing"
+},
+{
+    "nombre":"José Luis",
+    "puesto":"Gerente de logística"
+},
+{
+    "nombre":"Fernanda Perez",
+    "puesto":"Gerente de RRHH"
+},
+{
+    "nombre":"Fernando Niembro",
+    "puesto":"Gerente de Sistemas"
+}]

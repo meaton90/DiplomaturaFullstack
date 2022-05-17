@@ -1,0 +1,83 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /*hago que el body me ocupe el 100%*/
+}
+
+.contacto_img {
+    background-image: url("https://hospitalsiriolibanes.org/imagenes/190-emergency-call.jpg");
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.columna {
+    width: 45%;
+    box-sizing: border-box;
+    padding: 0.6em;
+}
+
+.columna.right{
+    margin-right: 5%;
+}
+
+.columna.left {
+    border-right: 1px solid gray;
+    margin-left: 5%;
+}
+
+.columna.right p {
+    font-size: 0.9em;
+}
+
+.columna.right ul li {
+    font-size: 0.8em;
+}
+
+.formulario label {
+    vertical-align: top;
+    width: 30%;
+    display: inline-block;
+}
+
+.formulario input,
+.formulario textarea {
+    background-color: #ddd;
+    border-radius: 5px;
+    border: 1px solid #999;
+    padding: 0.4em 0.6em;
+    font-size: 0.8em;
+    width: 96%;
+}
+
+.formulario input[type="submit"] {
+    background-color: #6da9ed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 1em;
+    width: 100%;
+    /*tamaño del boton */
+    cursor: pointer;
+}
+
+.formulario textarea {
+    height: 10em;
+    resize: none;
+    /* elimino el control del tamaño del cuadro */
+}
+
+.formulario.acciones {
+    text-align: center;
+}
